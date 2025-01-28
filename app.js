@@ -8,8 +8,8 @@ function adicionarAmigo() {
         alert("Por favor, insira um nome");
     } else {
         amigos.push(nomeAmigo);
-        limparCampo();
     }
+    limparCampo();
 }
 
 function limparCampo() {
