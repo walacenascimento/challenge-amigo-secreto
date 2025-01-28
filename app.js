@@ -4,6 +4,16 @@ let amigos = [];
 
 function adicionarAmigo() {
     let nomeAmigo = document.querySelector('input').value;
-    console.log(nomeAmigo);
+    if (nomeAmigo == '') {
+        alert("Por favor, insira um nome");
+    } else {
+        amigos.push(nomeAmigo);
+        limparCampo();
+    }
+    console.log(amigos);
 }
-adicionarAmigo()
+
+function limparCampo() {
+    let limparCampo = document.querySelector('input');
+    limparCampo.value = ''
+}
