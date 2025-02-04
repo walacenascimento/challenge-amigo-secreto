@@ -21,9 +21,17 @@ function limparCampo() {
 }
 
 function listaDeAmigos() {
- let listaDeAmigos = document.getElementById('listaAmigos');
- listaDeAmigos.innerHTML = ' ';
- let novoAmigo = document.createElement('li');
- novoAmigo.textContent = amigos;
- listaDeAmigos.appendChild(novoAmigo);
+    let listaDeAmigos = document.getElementById('listaAmigos');listaDeAmigos.innerHTML = ' ';
+    for (let index = 0; index < amigos.length; index++) {
+        let novoAmigo = document.createElement('li');
+        novoAmigo.textContent = amigos[index];
+        listaDeAmigos.appendChild(novoAmigo);
+    }
+}
+
+function sortearAmigo() {
+    let amigoSorteado =document.getElementById('resultado');
+    let sorteado = document.createElement('li');
+    sorteado.textContent = `O amigo sorteado é Walace`;
+    amigoSorteado.appendChild(sorteado);
 }
