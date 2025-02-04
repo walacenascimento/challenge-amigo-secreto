@@ -30,8 +30,11 @@ function listaDeAmigos() {
 }
 
 function sortearAmigo() {
-    let amigoSorteado =document.getElementById('resultado');
-    let sorteado = document.createElement('li');
-    sorteado.textContent = `O amigo sorteado é Walace`;
-    amigoSorteado.appendChild(sorteado);
+    const sortearAmigo =document.getElementById('resultado');
+    const sorteado = document.createElement('li');
+    const sortudo = Math.floor(Math.random() * amigos.length);
+    const amigoSorteado = amigos[sortudo];
+    console.log(amigoSorteado);
+    sorteado.textContent = `O amigo sorteado é ${amigoSorteado}`;
+    sortearAmigo.appendChild(sorteado);
 }
