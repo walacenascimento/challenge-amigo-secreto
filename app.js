@@ -12,7 +12,6 @@ function adicionarAmigo() {
         listaDeAmigos()
         
     }
-    limparCampo();
 }
 
 function limparCampo() {
