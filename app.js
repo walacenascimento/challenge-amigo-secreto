@@ -37,7 +37,7 @@ function sortearAmigo() {
         sorteado.textContent = `O amigo sorteado é ${amigoSorteado}`; // recebe o indice obtido no html
         sortearAmigo.appendChild(sorteado); // Insere o indice sorteado no novo elemente(li) que foi criado.
         limparListaDeAmigo()
-        desativaarBotao()
+        desativarBotao()
     }
 }
 
@@ -47,7 +47,7 @@ function limparListaDeAmigo() {
     itens.innerHTML = '';
 }
 
-function desativaarBotao() {
+function desativarBotao() {
     const button = document.querySelectorAll('button')[1];
     button.setAttribute('disabled', true);
 }
