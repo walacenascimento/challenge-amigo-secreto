@@ -36,8 +36,8 @@ function sortearAmigo() {
         const sorteado = document.createElement('li'); // Cria um novo elemente de lista li no html
         sorteado.textContent = `O amigo sorteado é ${amigoSorteado}`; // recebe o indice obtido no html
         sortearAmigo.appendChild(sorteado); // Insere o indice sorteado no novo elemente(li) que foi criado.
-        limparListaDeAmigo()
-        desativarBotao()
+        //limparListaDeAmigo()
+        //desativarBotao()
     }
 }
 
