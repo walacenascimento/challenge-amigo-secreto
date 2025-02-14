@@ -18,7 +18,8 @@ function limparCampo(tag) { // função que limpa o campo, após o nome ser inse
 
 // Função que captura o elemento de lista PAI (UL), cria um novo elemento filho (li), percorre o array amigo e adiciona o nome do amigo ao novo elemente filho (li).
 function listaDeAmigos() {
-    let listaDeAmigos = document.getElementById('listaAmigos');listaDeAmigos.innerHTML = ' ';
+    let listaDeAmigos = document.getElementById('listaAmigos');
+    listaDeAmigos.innerHTML = ' ';
     for (let index = 0; index < amigos.length; index++) {
         let novoAmigo = document.createElement('li');
         novoAmigo.textContent = amigos[index];
